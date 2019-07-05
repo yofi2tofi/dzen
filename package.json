@@ -1,0 +1,21 @@
+{
+  "name": "dzen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chance": "^1.0.18",
+    "http-proxy": "^1.17.0",
+    "proxy-chain": "^0.2.7",
+    "proxysocket": "^1.2.0",
+    "puppeteer": "^1.18.1",
+    "simple-socks": "^1.0.2",
+    "socks5-https-client": "^1.2.1"
+  }
+}
