@@ -77,7 +77,8 @@ const instance = port => {
       browser = await puppeteer.launch({
         devtools: false,
         executablePath:
-          '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+          // '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+          'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
         headless: false,
         args: [
           `--proxy-server=http://127.0.0.1:${port}`,
@@ -278,13 +279,14 @@ const instance = port => {
 
     setTimeout(
       async () => await interval(),
-      chance.natural({ min: 1000 * 60 * 2, max: 1000 * 60 * 5 })
+      // chance.natural({ min: 1000 * 60 * 2, max: 1000 * 60 * 5 })
+      0
     );
   })();
 };
 
 let port = 8000;
-for (let i = 0; i < 15; i++) {
+for (let i = 0; i < 1; i++) {
   instance(port);
   port++;
 }
